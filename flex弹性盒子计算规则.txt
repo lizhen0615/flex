@@ -1,0 +1,10 @@
+和FlexBox弹性盒子计算规则相关的属性有：
+
+margin
+
+flex-basis
+
+flex-grow
+
+flex-shrink：每个元素收缩的权重为其 flex-shrink 乘以其宽度。
+

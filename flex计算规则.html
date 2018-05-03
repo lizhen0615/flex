@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex计算规则</title>
+    <style type="text/css">
+        .box1 {
+            display: flex;margin-top: 20px;
+            width: 400px;border: 1px solid red;
+        }
+        .box1 .item {
+            height: 40px;
+        }
+        .box1 .item1 {
+            flex: 1 0 0;
+            background:coral;
+        }
+        .box1 .item2 {
+            flex: 2 0 0;
+            background:lightblue;
+            margin: 0 50px;
+        }
+        .box1 .item3 {
+            flex: 3 0 0;
+            background:khaki;
+        }
+        .box2{
+            margin-top: 20px;
+            display: flex;
+            width: 400px;
+            border: 1px solid red;
+        }
+        .box2 .item{
+            height: 50px;
+        }
+        .box2 .item1{
+           background: deepskyblue;
+            /*flex-basis: 0;*/
+            width: 100px;
+        }
+        .box2 .item2{
+            width: 200px;background: yellowgreen;
+        }
+        .box3{
+            display: flex;margin-top: 20px;width: 400px;height: 50px;
+            border: 1px solid red;
+        }
+        .box3 .item1{
+            width: 100px;background: greenyellow;flex-grow: 1;
+        }
+        .box3 .item2{
+            width: 100px;background: cadetblue;flex-grow: 3;
+        }
+        .box4{
+            display: flex;margin-top: 20px;width: 400px;height: 50px;
+            border: 1px solid red;
+        }
+        .box4 .item1{
+            flex-shrink: 1;
+            width: 200px;
+            /*25*/
+            background: deepskyblue;
+        }
+        .box4 .item2{
+            flex-shrink: 2;
+            width: 300px;
+            /*75*/
+            background: darkcyan;
+        }
+        .box5{
+            display: flex;
+            margin-top: 20px;
+            width: 400px;height: 200px;
+            border: 1px solid red;
+            flex-direction: column;
+        }
+        .box5 .item{
+            width: 100px;height: 50px;background: rosybrown;
+        }
+        .box5 .item1{
+            margin-bottom: 10px;
+        }
+        .box5 .item2{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class='box1'>
+    <div class='item item1'></div>
+    <div class='item item2'></div>
+    <div class='item item3'></div>
+</div>
+<div class="box2">
+    <div class="item item1"></div>
+    <div class="item item2"></div>
+</div>
+<div class="box3">
+    <div class="item item1"></div>
+    <div class="item item2"></div>
+</div>
+<div class="box4">
+    <div class="item item1"></div>
+    <div class="item item2"></div>
+</div>
+<div class="box5">
+    <div class="item item1"></div>
+    <div class="item item2"></div>
+</div>
+</body>
+</html>

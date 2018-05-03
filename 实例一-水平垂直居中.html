@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>水平垂直居中</title>
+    <style type="text/css">
+        .box1{margin: 30px;
+            display: flex;width: 400px;height: 100px;border: 1px solid red;
+            justify-content: center;align-items: center;
+            flex-direction: column;
+        }
+        .item{
+            color: #333;font-size: 16px;
+        }
+        .box2{
+            margin: 30px;
+            display: flex;
+            width: 400px;height: 100px;border: 1px solid red;
+        }
+        .box2 .item{
+            margin: auto;
+        }
+        .box3{
+            margin: 30px;position: relative;width: 400px;height: 100px;border: 1px solid red;
+        }
+        .box3 .item{
+            position: absolute;top: 50%;left: 50%;margin-left: -30px;margin-top: -30px;
+            width: 60px;height: 60px;background: yellowgreen;
+        }
+        .box4{
+            margin: 30px;position: relative;width: 400px;height: 100px;
+            border:1px solid red;
+        }
+        .box4 .item{
+            position:absolute;margin:auto;top:0;bottom:0;  left:0;  right:0;
+            width: 100px;height: 50px;background: burlywood;
+        }
+        .box5{
+            width: 400px;height: 100px;border: 1px solid red;text-align: center;vertical-align: middle;
+            display: table-cell;
+        }
+        .box5 .item{
+            display: inline-block;border: 2px solid cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+<!--flex布局方法-->
+<div class="box1">
+    <div class="item">水平垂直居中</div>
+    <div class="item">水平垂直居中</div>
+</div>
+<div class="box2">
+    <div class="item">水平垂直居中</div>
+</div>
+<!--传统布局方法-->
+<div class="box3">
+    <div class="item"></div>
+</div>
+<div class="box4">
+    <div class="item"></div>
+</div>
+<div class="box5">
+    <div class="item">行内或行内块级元素</div>
+</div>
+</body>
+</html>
